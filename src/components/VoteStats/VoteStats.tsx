@@ -1,0 +1,1 @@
+import { Votes, VoteType } from '../../types/votes'; 
