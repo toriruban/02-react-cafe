@@ -1,6 +1,3 @@
-import css from '../CafeInfo/CafeInfo.module.css'; 
-
-
 interface CafeInfoProps {
    container: string, 
    title: string,
