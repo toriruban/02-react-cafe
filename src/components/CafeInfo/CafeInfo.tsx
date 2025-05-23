@@ -1,14 +1,11 @@
-interface CafeInfoProps {
-   container: string, 
-   title: string,
-   description: string
-}
+import css from '../CafeInfo/CafeInfo.module.css'
 
-export default function CafeInfo({container,title,description }:CafeInfoProps){
+
+export default function CafeInfo() {
  return(
- <div className={container}>
-  <h1 className={title}>Sip Happens Café</h1>
-  <p className={description}>
+ <div className={css.container}>
+  <h1 className={css.title}>Sip Happens Café</h1>
+  <p className={css.description}>
     Please rate our service by selecting one of the options below.
   </p>
 </div>

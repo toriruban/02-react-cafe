@@ -7,34 +7,33 @@ interface VoteOptionsProps {
     canReset: boolean
 }
 
-export default function VoteOptions({onVote,onReset,canReset}:VoteOptionsProps) {
+export default function VoteOptions({ onVote,onReset,canReset }:VoteOptionsProps) {
 return(
-<div className={css.container}>
+<div className={ css.container }>
   <button 
         type='button'
-        className={css.button}
+        className={ css.button }
         onClick={() => onVote('good')}
         aria-label="good">Good</button>
 
    <button 
         type='button'
-        className={css.button}
+        className={ css.button }
         onClick={() => onVote('neutral')}
         aria-label="neutral">Neutral</button>
         
     <button 
         type='button'
-        className={css.button}
+        className={ css.button }
         onClick={() => onVote('bad')}
-        aria-label= 'bad'>Bad</button>
+        aria-label='bad'>Bad</button>
 
 
 {canReset &&
     <button 
         type='button'
-        className={`${css.button} ${css.reset}`}
-        onClick={onReset}
-        disabled={!canReset}
+        className={`${ css.button } ${ css.reset }`}
+        onClick={ onReset }
         aria-label='reset'>Reset</button>}
 </div>
 )}
